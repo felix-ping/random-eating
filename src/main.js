@@ -1,8 +1,16 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+import pages from '../src/components/page'
+Vue.use(ElementUI);
 
-Vue.config.productionTip = false
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+
+Vue.use(MintUI)
 
 new Vue({
-  render: h => h(App),
+  render: h => h(pages)
 }).$mount('#app')
+
+
